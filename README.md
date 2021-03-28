@@ -43,7 +43,7 @@
     # -lws2_32   // TCP/IP 네트워크 프로그래밍을 위해서...
     #
     # gcc 4.6.1버전으로 업그레이드 후 -mno-cygwin 옵션 제거
-    # 
+    #
     # 2021-03-28 
     #   오랜만에 다시사용하는데... WinBuilds의 통합 설치프로그램에서 MinGW x64를 설치했고, gcc버전은 4.8.3 이다.
     
@@ -56,8 +56,10 @@
   * GDB 디버깅
 
     ```bash
+    SET WIN_BUILD_PATH = G:\WinBuilds
     cd $(CURRENT_DIRECTORY)
-    G:\WinBuilds\bin\gdb.exe "$(CURRENT_DIRECTORY)\$(NAME_PART).exe" 
+    $(WIN_BUILD_PATH)\bin\gdb.exe "$(CURRENT_DIRECTORY)\$(NAME_PART).exe" 
+    UNSET WIN_BUILD_PATH
     cd $(NPP_DIRECTORY)
     #
     # GDB 디버깅 실행

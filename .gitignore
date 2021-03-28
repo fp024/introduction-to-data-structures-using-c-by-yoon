@@ -1,3 +1,4 @@
-.obj
-.exe
-.bak
+*.obj
+*.exe
+*.bak
+.vscode
