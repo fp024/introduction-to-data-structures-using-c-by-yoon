@@ -3,7 +3,7 @@
 
 * yes24 도서 판매 링크
 	
-* http://www.yes24.com/Product/Goods/6214396
+	* http://www.yes24.com/Product/Goods/6214396
 	
 * 진행방향
   * `윤성우의 열혈 자료구조` 책의 내용을 연습합니다.
