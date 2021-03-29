@@ -1,4 +1,6 @@
 *.obj
 *.exe
 *.bak
+a.out
+*.out
 .vscode
