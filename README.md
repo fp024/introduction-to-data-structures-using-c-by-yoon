@@ -46,6 +46,11 @@
     #
     # 2021-03-28 
     #   오랜만에 다시사용하는데... WinBuilds의 통합 설치프로그램에서 MinGW x64를 설치했고, gcc버전은 4.8.3 이다.
+    # 2021-04-01
+    #   https://sourceforge.net/projects/mingw-w64/files/mingw-w64/  
+    #   위의 사이트에서 압축파일 받아다 사용하는 것이 나을 것 같다. -static-libgcc -static-libstdc++ 도 컴파일 옵션에 넣을 필요가 있을 경우 넣자.
+    #   https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-win32/seh/x86_64-8.1.0-release-win32-seh-rt_v6-rev0.7z
+    
     
     ```
 
