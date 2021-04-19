@@ -1,6 +1,11 @@
 #include <stdio.h>
 
 int main () {
-	printf("MinGW gcc 와 Notepad++, VSCode 연동 테스트\n");
+	int a = 1;
+	{
+		int a = 2;
+		printf("%d\n", a);
+	}
+	printf("%d\n", a);
 	return 0;
 }
