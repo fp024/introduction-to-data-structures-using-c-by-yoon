@@ -73,4 +73,7 @@
 
     list, b, q 등 명령어 기억이 안나는데, 진행보면서 필요시 사용해보자.
 
-    
+   
+* git의 editor 변경
+    * Ubuntu에서 nano 에디터 사용이 익숙하지 않아서 vi로 변경  
+      git config --global core.editor /usr/bin/vi
