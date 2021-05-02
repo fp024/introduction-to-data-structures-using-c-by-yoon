@@ -4,7 +4,10 @@
 * yes24 도서 판매 링크
 	
 	* http://www.yes24.com/Product/Goods/6214396
-	
+  * 동영상 강의 (책 쿠폰으로 1년 무료 시청가능)
+    * http://www.orentec.co.kr/teachlist/DA_ST_1/teach_sub1.php
+    * mms 프로토콜로 wmv 동영상을 스트리밍 하는 것 같다.
+    
 * 진행방향
   * `윤성우의 열혈 자료구조` 책의 내용을 연습합니다.
 
