@@ -6,7 +6,9 @@
 			"label": "C/C++: gcc.exe 활성 파일 빌드",
 			"command": "D:\\MinGW64\\bin\\gcc.exe",
 			"args": [
-				"-g -W -Wall ",
+				"-g",
+				"-W",
+				"-Wall",
 				"${file}",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
