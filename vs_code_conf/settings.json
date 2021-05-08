@@ -1,0 +1,6 @@
+{
+  "code-runner.executorMap": {
+    "c": "cd $dir && D:\\MinGW64\\bin\\gcc.exe -g -W -Wall $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe",
+    "cpp": "cd $dir && D:\\MinGW64\\bin\\g++.exe -g -W -Wall $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe"
+  }
+}
