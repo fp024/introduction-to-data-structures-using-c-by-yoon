@@ -4,17 +4,17 @@
 		{
 			"type": "cppbuild",
 			"label": "C/C++: gcc.exe 활성 파일 빌드",
-			"command": "D:\\MinGW64\\bin\\gcc.exe",
+			"command": "C:/MinGW-w64/bin/gcc.exe",
 			"args": [
 				"-g",
 				"-W",
 				"-Wall",
 				"${file}",
 				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+				"${fileDirname}/${fileBasenameNoExtension}.exe"
 			],
 			"options": {
-				"cwd": "D:\\MinGW64\\bin\\"
+				"cwd": "C:/MinGW-w64/bin"
 			},
 			"problemMatcher": [
 				"$gcc"
@@ -23,7 +23,7 @@
 				"kind": "build",
 				"isDefault": true
 			},
-			"detail": "컴파일러: D:\\MinGW64\\bin\\gcc.exe"
+			"detail": "컴파일러: C:/MinGW-w64/bin/gcc.exe"
 		}
 	]
 }

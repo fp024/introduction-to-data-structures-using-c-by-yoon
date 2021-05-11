@@ -8,9 +8,22 @@
     * http://www.orentec.co.kr/teachlist/DA_ST_1/teach_sub1.php
     * mms 프로토콜로 wmv 동영상을 스트리밍 하는 것 같다.
     
-* 진행방향
+## 진행
   * `윤성우의 열혈 자료구조` 책의 내용을 연습합니다.
 
+## 의견
+* 19쪽 LinearSearch.c 5번줄
+  * for문 조건식 부분에서 int i = 0 으로 한번에 지정할 수 있으므로 for문 밖에서 int i;를 별도로 선언할 필요는 없을 것 같습니다.
+
+## 환경설정 (Visual Studio Code)
+* VS Code에서 컴파일러 경로 설정
+  * 환경변수등을 사용하지 못하고 절대경로만 설정에 넣을 수 있어서,  
+    mklink 명령으로 C드라이브에 실제 MinGW-w64가 설치된 경로를 바라보는 Junction 링크를 만들고 그것을 사용하자! (C드라이브가 없는 윈도우 컴퓨터는 없으므로...)
+  * 예전에 했었던 기억 때문에 Notepad++로 하려다가...  
+    디버깅이나 연동이 쉽고 간단해서, VS Code에서 진행하기로함, 
+  * vs_code_conf 디렉토리에 현제 사용 설정 예시 보관
+
+## (구) 환경설정 (Notepad++, NppExec)
   * 코드 편집/컴파일:  윈도우 환경의 MinGW gcc와 Notepad++를 연동해서 사용
 
   * 디버깅:  필요시 GDB로 시도.
@@ -75,8 +88,7 @@
     ```
 
     list, b, q 등 명령어 기억이 안나는데, 진행보면서 필요시 사용해보자.
-
-   
+    
 * git의 editor 변경
     * Ubuntu에서 nano 에디터 사용이 익숙하지 않아서 vi로 변경  
       git config --global core.editor /usr/bin/vi

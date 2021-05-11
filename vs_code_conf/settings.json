@@ -1,6 +1,32 @@
 {
-  "code-runner.executorMap": {
-    "c": "cd $dir && D:\\MinGW64\\bin\\gcc.exe -g -W -Wall $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe",
-    "cpp": "cd $dir && D:\\MinGW64\\bin\\g++.exe -g -W -Wall $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe"
-  }
+    "files.associations": {
+        "stdio.h": "c"
+    },
+    // Code Runner 플러그인용 설정
+    "code-runner.executorMap": {
+        "c": "cd $dir && C:/MinGW-w64/bin/gcc.exe -g -W -Wall $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe",
+        "cpp": "cd $dir && C:/MinGW-w64/bin/g++.exe -g -W -Wall $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe"
+    },
+
+    // 체크 스타일
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+ 
+    // 코드페이지 65001 UTF-8 적용해서 CMD터미널 띄우기 위한 설정
+    "terminal.integrated.profiles.windows": {
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "env": {
+                "PATH":"C:/MinGW-w64/bin;${env:PATH}"
+            },
+            "args": ["/k", "chcp 65001"],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+		"PowerShell": null
+    }
 }
