@@ -11,7 +11,8 @@
     // 체크 스타일
     "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
  
-    // 코드페이지 65001 UTF-8 적용해서 CMD터미널 띄우기 위한 설정
+    // 코드페이지 65001 UTF-8 적용해서 CMD, PowerShell터미널 띄우기 위한 설정
+    // 워크스페이스 설정에다가 정의는 가능하지만, 사용자 설정에 선언해야 정상동작하는 것 같다.
     "terminal.integrated.profiles.windows": {
         "Command Prompt": {
             "path": [
@@ -24,9 +25,13 @@
             "args": ["/k", "chcp 65001"],
             "icon": "terminal-cmd"
         },
-        "Git Bash": {
-            "source": "Git Bash"
-        },
-		"PowerShell": null
+        "PowerShell": {
+            "source": "PowerShell",
+            "env": {
+                "PATH":"C:/MinGW-w64/bin;${env:PATH}"
+            },
+            "args": ["-NoExit", "-Command", "chcp 65001"]
+        }
+        ,"Git Bash": null
     }
 }
