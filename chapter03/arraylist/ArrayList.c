@@ -1,13 +1,9 @@
 #include "ArrayList.h"
-
 #include <stdio.h>
 
 /**
  * 공유라이브러리로 만들어서 실행
- *    gcc -g -W -Wall -shared -o libArrayList.so ArrayList.c
- *    gcc -g -Wall -o ListMain.exe ListMain.c libArrayList.so
- * 
- *  build.bat를 실행해도 됨.
+ * - arraylist/build-lib.bat, build-list.bat 참조
  */
 void ListInit(List *ptrList) {
     // 리스트에 저장된 데이터 수 0

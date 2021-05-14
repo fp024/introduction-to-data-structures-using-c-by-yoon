@@ -25,3 +25,13 @@
 * 리스트의 ADT는 ArrayList.h 에 정의
 * 실제 구현은 ArrayList.c 에 구현
 * 사용은 main함수를 정의한 ListMain.c 에서 사용
+
+
+### 리스트에 구조체 변수 저장하기
+* point/Point.h, point/Point.c 참고
+* LInsert의 두번째 인자가 LData(int형) 형인데... 구조체 포인터를 주소값을 넣게된듯...  
+  32비트 환경이라면 주소값의 바이트가 4바이트이지만, 64비트 환경 컴파일이라면 주소값을 8바이트로 사용함.  
+  그래서 형변환 없이 포인터로 integer를 만들어서 문제가 있다고 경고 뜸.  
+  `passing argument 2 of 'LInsert' makes integer from pointer without a cast [-Wint-conversion]`  
+  => 메크로 사용해서 LData의 타입을 Point* 으로 변경하여 해결!
+
