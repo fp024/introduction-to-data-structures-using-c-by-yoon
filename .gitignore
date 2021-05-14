@@ -7,3 +7,6 @@ a.out
 *.out
 *.pdb
 *.ilk
+*.a
+*.so
+*.o
