@@ -1,8 +1,9 @@
+.vscode/
+.idea/
 *.obj
 *.exe
 *.bak
 a.out
 *.out
-.vscode
 *.pdb
 *.ilk
