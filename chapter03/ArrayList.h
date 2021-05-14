@@ -1,28 +1,24 @@
 /**
  * ArrayList.h
  * 
- * 책 80쪽의 명세서의 내용 기입, 
+ * 책 80쪽의 명세서 내용 기입, 
  * 저자님 코드 보지말고 실제 구현은 ArrayList.c에 해보는게 낫겠다.
  */
 
 /**
  * 배열기반 리스트
  */
-struct _arrayList {
+typedef struct _arrayList {
     // TODO
 
-};
-typedef _arrayList List;
-
+} List;
 
 /**
  * 리스트 요소, 이후 코드를 보니 LData란 구조체는 따로 없는 것 같다. 그냥 int* 쓰신듯...
  */
-struct _listData {
+typedef struct _listData {
     int value;
-};
-typedef _listData  LData;
-
+} LData;
 
 /**
  * 리스트 초기화
@@ -31,7 +27,6 @@ typedef _listData  LData;
  */
 void ListInit(List *ptrList);
 
-
 /**
  * 리스트에 데이터를 저장
  * @param ptrList   데이터를 저장할 리스트 주소값
@@ -39,14 +34,12 @@ void ListInit(List *ptrList);
  */
 void LInsert(List *ptrList, LData *ptrData);
 
-
 /**
  * 첫번째 데이터를 ptrData가 가리키는 메모리에 저장.
  * @param ptrList   데이터를 저장할 리스트 주소값
  * @param ptrData   저장할 데이터의 주소값
  */
 int LFirst(List *ptrList, LData *ptrData);
-
 
 /**
  * - 참조된 데이터의 다음 데이터가 ptrData가 가리키는 메모리에 저장
@@ -56,7 +49,6 @@ int LFirst(List *ptrList, LData *ptrData);
  */
 int LNext(List *ptrList, LData *ptrData);
 
-
 /**
  * - LFirst 또는 LNext 함수의 마지막 반환데이터를 삭제
  * - 삭제된 데이터는 반환됨.
@@ -64,7 +56,6 @@ int LNext(List *ptrList, LData *ptrData);
  * @return 마지막 반환 데이터
  */
 LData LRemove(List *ptrList);
-
 
 /**
  * 리스트에 저장되어있는 데이터 수 반환
