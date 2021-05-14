@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "ArrayList.h"
+#include "arraylist/ArrayList.h"
 
 int main(void) {
     // ArrayList의 생성 및 초기화
