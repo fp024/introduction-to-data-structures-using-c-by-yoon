@@ -13,4 +13,4 @@ call build-lib.bat
 copy libarraylist.so ..
 cd ..
 
-C:\MinGW-w64\bin\gcc -g -Wall -o PointListMain.exe PointListMain.c libarraylist.so libpoint.so
+C:\MinGW-w64\bin\gcc -g -Wall -o PointListMain.exe PointListMain.c libpoint.so libarraylist.so 
