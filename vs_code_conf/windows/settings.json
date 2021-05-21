@@ -7,6 +7,8 @@
         "c": "cd $dir && C:/MinGW-w64/bin/gcc.exe -g -W -Wall $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe",
         "cpp": "cd $dir && C:/MinGW-w64/bin/g++.exe -g -W -Wall $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe"
     },
+    "code-runner.runInTerminal": false,
+    "code-runner.clearPreviousOutput": true,
 
     // 체크 스타일
     "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
