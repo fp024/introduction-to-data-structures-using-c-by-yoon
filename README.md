@@ -23,6 +23,14 @@
         * https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-win32/seh/x86_64-8.1.0-release-win32-seh-rt_v6-rev0.7z
       * x86_64-posix-seh
         * https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-posix/seh/x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z
+* **TDM-GCC**
+  * https://github.com/jmeubank/tdm-gcc/releases
+    * 10.3.0-2
+      * https://github.com/jmeubank/tdm-gcc/releases/download/v10.3.0-tdm64-2/tdm64-gcc-10.3.0-2.exe
+    * gcc 최신 버전으로 되어있길레 바꿔 사용해봄
+      * Embarcadero에서 스폰서하는 Dev-C++ 에서 내장 GCC를 TDM-GCC를 사용했다고 해서, 괜찮은 것 같아서 시스템의 MinGW 정션 링크를 TDM-GCC로 바꿨다.
+        * https://github.com/Embarcadero/Dev-Cpp
+      * 스레드 모델은 posix로 나타남
 
 * VS Code에서 컴파일러 경로 설정
   * 시스템 환경변수를 사용하지 못하고 절대 경로만 설정에 넣을 수 있어서,  
