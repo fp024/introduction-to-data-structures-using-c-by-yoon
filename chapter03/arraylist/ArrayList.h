@@ -14,8 +14,14 @@
 
 #define LIST_LEN 100
 
-#ifndef USE_CUSTOM_DATATYPE
-typedef int LData;  // LData에 대한 typedef 선언, USE_CUSTOM_DATATYPE 선언이 없었다면 기본 int로 실행됨.
+#ifdef _USE_POINT_DATATYPE
+#include "../point/Point.h"
+typedef Point* LData;
+#elif _USE_NAMECARD_DATATYPE
+#include "../namecard/NameCard.h"
+typedef NameCard *LData;
+#else
+typedef int LData;
 #endif
 
 /**

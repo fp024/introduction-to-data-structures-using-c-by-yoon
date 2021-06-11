@@ -1,15 +1,12 @@
+#pragma once
+
 #define NAME_LEN 30
 #define PHONE_LEN 30
-
-#define USE_CUSTOM_DATATYPE
 
 typedef struct __namecard {
     char name[NAME_LEN];
     char phone[PHONE_LEN];
 } NameCard;
-
-// 리스트는 NameCard 구조체의 주소값을 다룬다
-typedef NameCard *LData;
 
 /**
  * NameCard 구조체 변수의 동적 할당 및 초기화후 주소값 반환

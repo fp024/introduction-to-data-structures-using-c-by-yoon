@@ -1,16 +1,10 @@
 @echo off
 
 cd point
-:: 1. LData를 결정하는 전처리기 메크로 때문에, point관련을 먼저 컴파일 해야함.
-:: 2. build-lib.bat 에 의해 생성된 공유라이브러리 libpoint.so를 실행파일과 같은 경로에 복사해서 위치시킴
+:: 1. LData 를 Point 타입으로 정의하는 메크로를 전달 (-D _USE_POINT_DATATYPE)
+:: 2. build-lib.bat 에 의해 생성된 공유라이브러리 libpointlist.so를 실행파일과 같은 경로에 복사해서 위치시킴
 call build-lib.bat
-copy libpoint.so ..
+copy libpointlist.so ..
 cd ..
 
-cd arraylist
-:: 1. build-lib.bat 에 의해 생성된 공유라이브러리 libarraylist.so를 실행파일과 같은 경로에 복사해서 위치시킴
-call build-lib.bat
-copy libarraylist.so ..
-cd ..
-
-C:\MinGW-w64\bin\gcc -g -Wall -o PointListMain.exe PointListMain.c libpoint.so libarraylist.so 
+C:\MinGW-w64\bin\gcc -g -Wall -D _USE_POINT_DATATYPE -o PointListMain.exe PointListMain.c libpointlist.so

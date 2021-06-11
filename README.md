@@ -40,6 +40,10 @@
     
   * vs_code_conf 디렉토리에 현재 사용 설정 예시 보관
 
+## 기타
+* `#pragma once` 는 MinGW GCC에서도 잘 인식된다.
+
+
 ## (구) 환경설정 (Notepad++, NppExec)
   * 코드 편집/컴파일:  윈도우 환경의 MinGW gcc와 Notepad++를 연동해서 사용
 
