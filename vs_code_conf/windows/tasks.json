@@ -6,6 +6,8 @@
 			"label": "C/C++: gcc.exe 활성 파일 빌드",
 			"command": "C:/MinGW-w64/bin/gcc.exe",
 			"args": [
+				"-finput-charset=UTF-8",
+				"-fexec-charset=CP949",
 				"-g",
 				"-W",
 				"-Wall",

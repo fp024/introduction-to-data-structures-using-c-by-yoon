@@ -12,9 +12,15 @@
 
     // 체크 스타일
     "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
- 
+    
+    // (이전 내용)
     // 코드페이지 65001 UTF-8 적용해서 CMD, PowerShell터미널 띄우기 위한 설정
-    // 워크스페이스 설정에다가 정의는 가능하지만, 사용자 설정에 선언해야 정상동작하는 것 같다.
+    // 워크스페이스 설정에다가 정의는 가능하지만, 사용자 설정에 선언해야 정상동작한다.
+    // 
+    // (추가 내용)
+    // gcc에서 실행 인코딩을 CP949로 설정해서 컴파일 할 수 있어서, 
+    // 소스 코드 컴파일이 UTF-8이더라도 CP949터미널에서 정상 수행할 수 있어 
+    // 터미널의 코드 페이지를 UTF-8(65001)로 바꿀 필요는 없다.
     "terminal.integrated.profiles.windows": {
         "Command Prompt": {
             "path": [
@@ -24,15 +30,15 @@
             "env": {
                 "PATH":"C:/MinGW-w64/bin;${env:PATH}"
             },
-            "args": ["/k", "chcp 65001"],
+            // "args": ["/k", "chcp 65001"],
             "icon": "terminal-cmd"
         },
         "PowerShell": {
             "source": "PowerShell",
             "env": {
                 "PATH":"C:/MinGW-w64/bin;${env:PATH}"
-            },
-            "args": ["-NoExit", "-Command", "chcp 65001"]
+            }
+            //, "args": ["-NoExit", "-Command", "chcp 65001"]
         }
         ,"Git Bash": null
     }
